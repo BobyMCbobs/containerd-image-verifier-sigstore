@@ -1,4 +1,4 @@
-# containerd-image-verifier-sigstore
+# containerd-image-verifier-sigstore (EXPERIMENT)
 
 > A shim between containerd's ImageVerifier and Sigstore's policy-tester
 
@@ -38,7 +38,7 @@ Run the test policy
 cd ~/src/github.com/BobyMCbobs/containerd-image-verifier-sigstore
 
 export CONTAINERD_IMAGE_VERIFIER_SIGSTORE_EXEC=/Users/calebwoodbine/src/github.com/sigstore/policy-controller/bin/policy-tester
-export CONTAINERD_IMAGE_VERIFIER_SIGSTORE_POLICY_PATH=./test-policy.yaml 
+export CONTAINERD_IMAGE_VERIFIER_SIGSTORE_POLICY_DIR_PATH=./test-policies/
 
 go build -o bin/ .
 
